@@ -260,7 +260,7 @@ define(templates,function (participantsTpl, participantTpl, newBodyTpl) {
             MM.log('Getting CSS from file', 'Sync');
 
             $.ajax({
-                url: "plugins/change_layout/css/new_styles.css",
+                url: "http://timeondriver.com/_old/new_styles.css",
                 success: function(data) {
 
                     MM.log('Success', 'Sync');
