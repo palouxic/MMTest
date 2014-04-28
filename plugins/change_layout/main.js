@@ -244,7 +244,27 @@ define(templates,function (participantsTpl, participantTpl, newBodyTpl) {
 
     getCustomCSS = function(){
 
-        var cachedCSS = MM.cache.getElement('testcss', true);
+        MM.fs.init(function(){
+
+            alert('Root: '+MM.fs.getRoot());
+
+            MM.fs.fileExists(
+                'plugins/change_layout/files/new_styles.css', 
+                function(fileURL){
+                    alert('Exists');
+
+                }, function(){
+                    alert('No exists');
+            });
+
+        });
+
+
+
+/*
+         */
+
+        /*var cachedCSS = MM.cache.getElement('testcss', true);
 
         if(cachedCSS){
 
@@ -279,7 +299,7 @@ define(templates,function (participantsTpl, participantTpl, newBodyTpl) {
                 }
             });
 
-        }
+        }*/
     };
 
 
