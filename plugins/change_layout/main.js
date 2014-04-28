@@ -246,15 +246,15 @@ define(templates,function (participantsTpl, participantTpl, newBodyTpl) {
 
         MM.fs.init(function(){
 
-            alert('Root: '+MM.fs.getRoot());
+            MM.popMessage('Root: '+MM.fs.getRoot());
 
             MM.fs.fileExists(
                 'plugins/change_layout/files/new_styles.css', 
                 function(fileURL){
-                    alert('Exists');
+                    MM.popMessage('Exists');
 
                 }, function(){
-                    alert('No exists');
+                    MM.popMessage('No exists');
             });
 
         });
