@@ -1,0 +1,63 @@
+#panel-left {
+ left: 0;
+ width: 100%;
+ height: 20%;
+}
+
+#panel-center {
+ left: 100%;
+ width: 100%;
+ top: 215px;
+ display: none;
+}
+
+#panel-right {
+ left: 100%;
+ width: 100%;
+ top: 215px;
+ padding-right: 50px;
+ display: none;
+}
+
+#panel-left.animate {
+ left: 0%;
+}
+
+#panel-center.animate {
+ left: 0%;
+}
+
+.user-menu  .user-options {
+	background: #FA8F1C url(../img/orange-bg.png);
+	height: 40px;
+	width: 100%;
+}
+
+#mycourses {
+	overflow: auto;
+	width: 100%;
+}
+
+
+@media	only screen and (min-width: 768px)	and (-webkit-min-device-pixel-ratio: 1) {
+
+	#add-site h1,
+	#add-site form {
+	  margin: 0 auto;
+	  width: 70%;
+	}
+
+    #panel-center {
+		left: 0%;
+		width: 33%;
+		display: block;
+    }
+
+    #panel-right{
+		left: 33%;
+		width: 67%;
+		padding: 0px;
+		display: block;
+    }
+
+}
